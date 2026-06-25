@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.shubh_mart"
+    namespace = "com.example.shubh_kriski_kendra"
     compileSdk = 34
     ndkVersion = "27.0.12077973"
 
@@ -19,7 +19,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.shubh_mart"
+        applicationId = "com.example.shubh_kriski_kendra"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
