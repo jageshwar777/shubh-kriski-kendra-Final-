@@ -28,6 +28,15 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
       
+      - name: Find and Copy APK
+        run: |
+          find . -name "*.apk" -type f
+          mkdir -p build/app/outputs/flutter-apk/
+          cp android/app/build/outputs/apk/release/*.apk build/app/outputs/flutter-apk/app-release.apk || true
+          cp android/app/build/outputs/apk/release/*.apk build/app/outputs/flutter-apk/ || true
+          cp build/app/outputs/apk/release/*.apk build/app/outputs/flutter-apk/ || true
+          ls -la build/app/outputs/flutter-apk/
+      
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
