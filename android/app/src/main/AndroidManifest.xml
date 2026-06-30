@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     
+    <!-- ✅ Android 11+ के लिए UPI apps detect करने के लिए -->
     <queries>
         <intent>
             <action android:name="android.intent.action.VIEW" />
@@ -15,11 +16,11 @@
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="tez" />
+            <data android:scheme="gpay" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="gpay" />
+            <data android:scheme="tez" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
@@ -32,7 +33,7 @@
     </queries>
 
     <application
-        android:label="Shubh Mart"
+        android:label="Shubh Krishi Kendra"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
