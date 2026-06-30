@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.shubh_kriski_kendra"
-        minSdk = 21
+        minSdk = 21  // ✅ Android 5.0+ (सभी गाँव वाले फोन पर चलेगा)
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
